@@ -20,7 +20,7 @@ If we print out the value of s, as we expect, `s equals 0`, however, where this 
 var higherSequence:Bool = s > MAX_UINT;
 ```
 
-In a typical UInt, the value here would print out as `false`, but since we are doing the comparison in sequential space, the value of higherSequence is actually `true`. This is important because it allows us to deal with infinite sequences in a finite number space(32-bits). It allows you to keep a reliable sequence order, even when an integer spill-over occurs by providing a 32-bit revolving index pool. 
+In a typical UInt, the value here would print out as `false`, but since we are doing the comparison in sequential space, the value of higherSequence is actually `true`. This is important because it allows us to deal with infinite sequences in a finite number space(32-bits). It allows you to keep a reliable sequence order, even when an integer overflow occurs by providing a 32-bit revolving index pool. 
 
 Here's a brief demystification at how this actually works under the hood:
 
