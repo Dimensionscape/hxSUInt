@@ -1,9 +1,9 @@
 # hxSUInt
 hxSUInt is a simple implementation of a sequentially comparative unsigned integer.
 
-SUInt provides a common solution for sequence number arithmatic wrapped as an abstract unsigned integer Type.
+SUInt(Sequential Unsigned Integer) provides a common solution for sequence number arithmatic wrapped as an abstract unsigned integer Type.
 
-An SUInt(Sequential Unsigned Integer) behaves like a typical 32-bit unsigned integer, but allows for reliable comparisons in 32-bit looping sequence space by using operators. 
+An SUInt behaves like a typical 32-bit unsigned integer, but allows for reliable comparisons in 32-bit looping sequence space by using operators. 
 
 A sequence, in this case, provides an increment capable unsigned integer that retains its reliability to compare a sequence even in the event that the sequence reaches the max UInt(4294967295). For further clarification, consider the following code:
 
