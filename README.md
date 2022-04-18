@@ -30,7 +30,7 @@ Take a 8-bit uint sequence space where the max unsigned integer is 255(8 bits is
 
 We know from the previous run through that `0 > 255 = true`, but what is missing from the explanation is how this assumption is made. How we reach this conclusion is actually quite simple. Lets assume `s equals 64`. Applying the same rules of our sequence space, we can reliably determine that `64 > 193 = true`.
 
-![image](https://user-images.githubusercontent.com/26172437/163866795-7953a5b2-b702-4f93-80eb-1ea1c0f876a9.png)
+![image](https://user-images.githubusercontent.com/26172437/163878591-8c51e753-147a-45c9-81fc-aacfa7216ec6.png)
 
 We do this by calculating the distance between s and s + MAX_INT and determine that any numbers preceding the sequence `s`, within that range, is `less than s`.
 
