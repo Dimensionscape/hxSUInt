@@ -29,6 +29,7 @@ Here's a brief demystification at how this actually works under the hood:
 Take a 8-bit uint sequence space where the max unsigned integer is 255(8 bits is a little easier to visualize in this case).
 
 We know from the previous run through that `0 > 255 = true`, but what is missing from the explanation is how this assumption is made. How we reach this conclusion is actually quite simple. Lets assume `s equals 64`. Applying the same rules of our sequence space, we can reliably determine that `64 > 193 = true`. We do this by calculating the distance between s and s + MAX_UINT and determine that any numbers preceding the sequence `s`, within that range, is `less than s`.
+
 ![image](https://user-images.githubusercontent.com/26172437/163866795-7953a5b2-b702-4f93-80eb-1ea1c0f876a9.png)
 
 *A particular common use case for this can be seen in the TCP protocol which relies on this type of sequence number arithmatic to ensure features like reliable packet delivery.*
