@@ -32,7 +32,7 @@ We know from the previous run through that `0 > 255 = true`, but what is missing
 
 ![image](https://user-images.githubusercontent.com/26172437/163866795-7953a5b2-b702-4f93-80eb-1ea1c0f876a9.png)
 
-We do this by calculating the distance between s and s + MAX_UINT and determine that any numbers preceding the sequence `s`, within that range, is `less than s`.
+We do this by calculating the distance between s and s + MAX_INT and determine that any numbers preceding the sequence `s`, within that range, is `less than s`.
 
 *A particular common use case for this can be seen in the TCP protocol which relies on this type of sequence number arithmatic to ensure features like reliable packet delivery.*
 
